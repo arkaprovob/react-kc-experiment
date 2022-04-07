@@ -12,7 +12,7 @@ import Keycloak from 'keycloak-js';
 let keycloak = Keycloak('./resources/keycloak.json');
 
 //Initialization of the keycloak instance
-keycloak.init({ onLoad: 'login-required',redirectUri: 'https://intelligence.redhat.preprod.com' }).then((authenticated) => {
+keycloak.init({ onLoad: 'login-required',redirectUri: 'localhost:3000' }).then((authenticated) => {
 
     console.log(keycloak);
     console.log(authenticated);
